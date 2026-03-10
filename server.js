@@ -1,11 +1,9 @@
-import express from "express"
+//server ko start 
+import app from "./src/app.js";
+import express from "express";
 
-const app = express()
-app.get('/',(req,res)=>{
-        res.send("hello")
-})
 
 app.listen(3000,()=>{
-    console.log("server started");
+    console.log("started");
     
 })
