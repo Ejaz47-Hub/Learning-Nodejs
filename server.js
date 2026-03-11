@@ -1,9 +1,8 @@
-//server ko start 
 import app from "./src/app.js";
-import express from "express";
+import connectDB from "./src/db/db.js";
 
-
-app.listen(3000,()=>{
-    console.log("started");
+connectDB()
+app.listen(3000, ()=>{
+    console.log("Server is running at 3000");
     
 })
